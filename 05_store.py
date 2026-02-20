@@ -48,6 +48,14 @@ store = {
 
 # TODO здесь ваш код
 
+for name, id in goods.items():
+    total_count = 0
+    total_price = 0
+    store_list = store[id]
+    for item in store_list:
+        total_count += item['quantity']
+        total_price += item['price'] * total_count
+    print(f'{name} - {total_count} шт, стоимость {total_price} руб')
 
 
 
