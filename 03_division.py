@@ -11,3 +11,9 @@
 a, b = 179, 37
 
 # TODO здесь ваш код
+count = 0
+while a >= b:
+    a -= b
+    count += 1
+
+print(f'Целочисленное деление {a + (b * count)} на {b} дает {count}')
