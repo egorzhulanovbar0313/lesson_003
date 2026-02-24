@@ -13,7 +13,7 @@ rainbow_colors = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN
 x = 50
 y = 50
 color_index = 0
-while color_index < 7:
+for _ in range(7):
     start_point = sd.get_point(x, y)
     end_point = sd.get_point(x + 300, y + 400)
     color = rainbow_colors[color_index]
